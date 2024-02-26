@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>1.1_1 操作系统的概念、功能和目标 - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../test/" class="nav-link">Test</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">操作系统 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">1.1_1 操作系统的概念、功能和目标</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../test/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#11_1" class="nav-link">1.1_1 操作系统的概念、功能和目标</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_2" class="nav-link">1.1_2 操作系统的特征</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_3" class="nav-link">1.1_3 操作系统的发展与分类</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_4" class="nav-link">1.1_4 操作系统的运行机制与体系结构</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_5" class="nav-link">1.1_5 中断和异常</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_6" class="nav-link">1.1_6 系统调用</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_7" class="nav-link">1.1_7 操作系统体系结构</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_8" class="nav-link">1.1_8 操作系统引导</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#11_9" class="nav-link">1.1_9 虚拟机</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#21_1" class="nav-link">2.1_1 进程的定义、组成、组织方式、特征</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#21_2" class="nav-link">2.1_2 进程的状态与转换</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#21_3" class="nav-link">2.1_3 进程控制</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#21_4" class="nav-link">2.1_4 进程通信</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#21_5" class="nav-link">2.1_5 线程概念和多线程模型</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#21_6" class="nav-link">2.1_6 线程的状态与转换</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">线程的组织与控制</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#22_1" class="nav-link">2.2_1 处理机调度的概念、层次</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#22_2" class="nav-link">2.2_2 进程调度的时机、切换与过程调度方式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#22_3" class="nav-link">2.2_3调度程序与闲逛进程</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#22_4" class="nav-link">2.2_4 调度算法的评价指标</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#22_5-fcfssjfhrrn" class="nav-link">2.2_5 FCFS、SJF、HRRN调度算法</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#22_6" class="nav-link">2.2_6 时间片轮转、优先级调度、多级反馈队列（适合交互式系统）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#23_1" class="nav-link">2.3_1 进程同步、进程互斥</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="11_1">1.1_1 操作系统的概念、功能和目标</h1>
+<p>作为用户和计算机硬件之间的接口<br />
+•   提供的功能<br />
+•   命令接口（联机命令接口|脱机命令接口）<br />
+•   程序接口<br />
+•   GUI（图形用户界面win|ios|andrio）<br />
+•   目标<br />
+•   方便用户使用<br />
+![图片1.1——1]<img alt="alt text" src="../image.png" />  </p>
+<h1 id="11_2">1.1_2 操作系统的特征</h1>
+<p>并发|并行<br />
+并发：多个事件交替发生（宏观同时发生、微观交替进行）<br />
+并行：多个事件同时发生  </p>
+<p>共享<br />
+两种资源共享方式<br />
+•   互斥共享方式：一个时间段内只允许一个进程访问该资源<br />
+•   同时共享方式：允许一个时间段内由多个进程“同时”对它们进行访问  </p>
+<p>虚拟<br />
+概念：把一个物理上的实体变为若干个逻辑上的对应物<br />
+•   空分复用计数<br />
+•   时分复用计数  </p>
+<p>异步<br />
+概念：在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停的，以不可预知的速度向前推进。只有系统拥有并发性，才有可能导致异步性。<br />
+![图片1.1——2]<img alt="alt text" src="../image-1.png" />  </p>
+<h1 id="11_3">1.1_3 操作系统的发展与分类</h1>
+<p>OS的发展与分类<br />
+•   手工操作阶段<br />
+•   纸带机（用户独占全机、人机速度矛盾）<br />
+•   批处理阶段——dan'dao<br />
+•   单道批处理系统（外围机——磁带）<br />
+•   多道批处理系统（操作系统开始出现）<br />
+•   分时操作系统<br />
+•   轮流处理作业<br />
+•   不能处理紧急任务<br />
+•   实时操作系统<br />
+•   优先处理紧急任务<br />
+•   硬实时系统：必须在严格的时间内完成处理 <br />
+•   软实时系统：可以偶尔犯错<br />
+•   网络操作系统<br />
+•   分布式操作系统<br />
+•   个人计算机操作系统<br />
+![图片1.1-3]<img alt="alt text" src="../image-2.png" />  </p>
+<h1 id="11_4">1.1_4 操作系统的运行机制与体系结构</h1>
+<p>OS的运行机制和体系结构<br />
+•   运行机制<br />
+•   两种指令<br />
+•   特权指令<br />
+•   非特权指令<br />
+•   两种处理器状态<br />
+•   核心态（root）<br />
+•   用户态<br />
+•   两种程序<br />
+•   内核程序(运行在核心态 )<br />
+•   应用程序<br />
+•   操作系统内核<br />
+•   时钟管理（实现计时功能）<br />
+•   中断处理<br />
+•   原语（程序运行具有原子性，不可中断）<br />
+•   对系统资源进行管理的功能<br />
+•   进程管理<br />
+•   存储器管理<br />
+•   设备管理<br />
+•   操作系统的体系结构<br />
+•   大内核（将操作系统的主要功能模块都作为系统内核，运行在核心态）<br />
+•   微内核（只把最基本的功能保留在内核）<br />
+![图片1.1-4]<img alt="alt text" src="../image-5.png" />  </p>
+<h1 id="11_5">1.1_5 中断和异常</h1>
+<p>•   中断机制的诞生<br />
+•   操作系统介入，开展管理工作<br />
+•   “用户态—&gt;核心态”是通过中断实现的。并且中断是唯一途径<br />
+•   中断的概念和作用<br />
+•   中断的分类<br />
+•   内中断（异常）<br />
+•   陷阱（trap）<br />
+•   故障（fault）<br />
+•   中止（abort）<br />
+•   外中断 （CPU外部）<br />
+•   外中断的处理过程<br />
+<img alt="alt text" src="../image-6.png" />  </p>
+<h1 id="11_6">1.1_6 系统调用</h1>
+<p>概念：应用程序通过系统调用请求操作系统的服务。保证系统的稳定性和安全性。<br />
+系统调用和库函数的区别：<br />
+•   系统调用是操作系统向上层提供的接口<br />
+•   有的库函数是对系统调用的进一步封装<br />
+•   当今编写的应用程序大多是通过高级语言提供的库函数间接地进行系统调用<br />
+<img alt="alt text" src="../image-7.png" />  </p>
+<h1 id="11_7">1.1_7 操作系统体系结构</h1>
+<p><img alt="alt text" src="../image-8.png" /><br />
+<img alt="alt text" src="../image-9.png" />  </p>
+<h1 id="11_8">1.1_8 操作系统引导</h1>
+<p><img alt="alt text" src="../image-10.png" />  </p>
+<h1 id="11_9">1.1_9 虚拟机</h1>
+<p><img alt="alt text" src="../image-11.png" />  </p>
+<h1 id="21_1">2.1_1 进程的定义、组成、组织方式、特征</h1>
+<p>定义：进程是进程实体的运行过程，是系统进行资源分配的一个基本独立单位  </p>
+<p>组成：PCB（进程存在唯一的标志），程序段，数据段  </p>
+<p>进程实体是进程的运行过程，是系统进行资源分配的一个独立单位  </p>
+<p>组织方式：链接方式，指针指向不同的队列；索引方式，索引表  </p>
+<p>特征：动态性、并发性、独立性、异步性、结构性  </p>
+<p><img alt="alt text" src="../image-12.png" />  </p>
+<h1 id="21_2">2.1_2 进程的状态与转换</h1>
+<p>状态：运行状态，就绪状态，阻塞状态，创建状态，终止状态  </p>
+<ul>
+<li>运行状态：占有CPU，并在CPU上运行，单核只能一个进程（双核两个）（CPU√，其它资源√）  </li>
+<li>就绪状态：已经具备运行条件，但是没有空闲的CPU，暂时不能运行（CPUX，其它资源√）  </li>
+<li>阻塞状态：等在某个事件的发生，暂时不能运行（CPUX，其它资源X）  </li>
+<li>创建状态：创建PCB，程序段，数据段  </li>
+<li>终止状态：回收内存，程序段，数据段，撤销PCB  </li>
+</ul>
+<p>进程状态间的转换(图，且只能这样转化)<br />
+<img alt="alt text" src="../image-13.png" />  </p>
+<p>进程pcb中，会有一个变量state来表示进程的当前状态。<br />
+进程的组织—链接方式、索引方式  </p>
+<p><img alt="alt text" src="../image-14.png" />  </p>
+<h1 id="21_3">2.1_3 进程控制</h1>
+<ul>
+<li>基本概念：进程控制的主要功能是对系统中的所有进程实施有效的管理，它具有创建新进程、撤销已有进程、实现进程状态转换等功能。  </li>
+<li>
+<p>什么是进程控制？<br />
+答：实现各种进程状态转换。  </p>
+</li>
+<li>
+<p>如何实现进程控制？<br />
+答：用“原语”实现。  </p>
+</li>
+<li>原语做的事情：</li>
+<li>更新PCD中的信息</li>
+<li>将PCD插入合适的队列</li>
+<li>
+<p>分配/回收资源<br />
+<img alt="alt text" src="../image-15.png" />  </p>
+</li>
+<li>
+<p>进程控制相关的原语：</p>
+</li>
+<li>进程的创建：<br />
+创建原语：申请空白PCB、为新进程分配所需资源、初始化PCB、将PCB插入就绪队列<br />
+引起进程创建的事件：用户登录、作业调度、提供服务、应用请求  </li>
+<li>进程的终止：<br />
+撤销原语：找到终止pcb，剥夺CPU并重新分配，终止子进程，归还资源，删除pcb   就绪态/阻塞态/运行态 ——》 终止态 ——》 无 <br />
+引起进程中止的事件：正常结束、异常结束、外界干预  </li>
+<li>进程的阻塞：<br />
+阻塞原语：运行态-&gt;阻塞态<br />
+引起进程阻塞的事件：需要等待系统分配某种资源、需要等待相互合作的其他进程完成工作  </li>
+<li>进程的唤醒： <br />
+唤醒原语：阻塞态-&gt;就绪态<br />
+引起进程唤醒的事件：等待的事件发生</li>
+<li>进程的切换<br />
+切换原语：将运行环境信息（context进程上下文）存入pcb，pcb移入相应队列，选择另一个进程执行并更新其pcb，根据pcb恢复新进程所需的运行环境。 运行态 ——》阻塞态/就绪态 就绪态——》运行态<br />
+引起进程切换的事件：当前进程时间片到、有更高优先级的进程到达、当前进程主动阻塞、当前进程终止  </li>
+</ul>
+<h1 id="21_4">2.1_4 进程通信</h1>
+<ul>
+<li>
+<p>进程是分配系统资源的单位，因此各进程拥有的内存地址空间相互独立</p>
+</li>
+<li>
+<p>共享存储 （分配共享空间，且互斥（P、V操作））<br />
+基于数据结构的共享：固定分配（低级）<br />
+基于存储区的共享：划分存储区（高级）  </p>
+</li>
+<li>
+<p>消息传递<br />
+通过发送原语，接收原语实现<br />
+消息：消息头（发送进程ID，接受进程ID）、消息体<br />
+直接通信方式（直接挂载消息）<br />
+间接通信方式（间接利用信箱发送消息）  </p>
+</li>
+<li>
+<p>管道通信（pipe）<br />
+只能半双工通信（只能单向传输），先进先出（循环队列）<br />
+互斥（管空没写不能读，反之同理）  </p>
+</li>
+</ul>
+<p><img alt="alt text" src="../image-16.png" />  </p>
+<h1 id="21_5">2.1_5 线程概念和多线程模型</h1>
+<ul>
+<li>
+<p>什么是线程，为什么要引入线程？<br />
+答：线程是一个基本的CPU执行单元，也是程序执行流的最小单位，进一步提高了系统的并发度  </p>
+</li>
+<li>
+<p>引入线程机制后，有什么变化？</p>
+</li>
+<li>资源分配、调度：<strong>进程是资源分配的基本单位，线程是调度的基本单位</strong></li>
+<li>并发性：各线程间也能并发，提升了并发度</li>
+<li>
+<p>系统开销：可以只在进程中切换，减小了CPU切换环境的系统开销</p>
+</li>
+<li>
+<p>线程有哪些重要的属性</p>
+</li>
+<li><strong>线程是处理机调度的基本单位</strong></li>
+<li>多CPU计算机中，各个线程可占用不同的CPU</li>
+<li>每个线程都有一个线程ID、线程控制块（TCB）</li>
+<li>线程也有就绪、阻塞、运行三种基本状态</li>
+<li>线程几乎不拥有系统资源</li>
+<li>同一进程的不同线程间共享进程的资源</li>
+<li>由于共享内存地址空间，统一进程中的线程间通信甚至无需系统干预</li>
+<li>同一进程中的线程切换，不会引起进程切换</li>
+<li>不同进程中的线程切换，会引起进程切换</li>
+<li>切换同进程内的线程，系统开销很小</li>
+<li>
+<p>切换进程，系统开销较大</p>
+</li>
+<li>
+<p>线程的实现方式</p>
+<ul>
+<li>用户级线程（ULT）：由应用管理，从用户的视角看能看到的线程</li>
+<li>内核级线程（KLT）：由操作系统管理，从操作系统内核视角看能看到的线程</li>
+<li>n个ULT可以映射到m个KLT上（n&gt;=m）</li>
+</ul>
+</li>
+</ul>
+<p><strong>内核级线程才是处理机分配的单位</strong></p>
+<ol>
+<li>多线程模型</li>
+<li>
+<p>多对一模型<br />
+  n个ULT映射到1个KLT<br />
+  优点：开销小，效率高<br />
+  缺点：容易阻塞，并发度不高  </p>
+</li>
+<li>
+<p>一对一模型<br />
+  n个ULT映射到n个KLT<br />
+  优点：并发能力很强<br />
+  缺点：占用成本高，开销大  </p>
+</li>
+<li>
+<p>多对多模型
+  n个ULT映射到m个KLT上（n&gt;=m）<br />
+  中和以上两种优缺点  </p>
+</li>
+</ol>
+<h1 id="21_6">2.1_6 线程的状态与转换</h1>
+<p><img alt="alt text" src="../image-17.png" />  </p>
+<h2 id="_1">线程的组织与控制</h2>
+<p><img alt="alt text" src="../image-18.png" /><br />
+<img alt="alt text" src="../image-19.png" />  </p>
+<h1 id="22_1">2.2_1 处理机调度的概念、层次</h1>
+<ul>
+<li>
+<p>基本概念：通常进程数量大于处理机数量，所以要按照一定的算法选择一个进程，并将处理机分配给它运行，以实现进程的并发执行</p>
+</li>
+<li>
+<p>三个层次：</p>
+</li>
+<li>高级调度（作业调度）：辅助外存与内存之间的调度，作业调入时会建立相应的PCB，作业调出时才撤销PCB，调入可由操作系统决定，调出由作业运行结束才调出</li>
+<li>中级调度（内存调度）：将暂时不用的进程放到外存（PCB不外放），提高内存利用率和系统吞吐量，进程状态为挂起状态，形成挂起队列</li>
+<li>低级调度（进程调度）：最基本，用算法为进程分配处理机资源，几十ms一次
+<img alt="alt text" src="../image-20.png" /></li>
+</ul>
+<p>三层调度的联系、对比<br />
+<img alt="alt text" src="../image-22.png" /><br />
+<strong>进程的“挂起态”</strong></p>
+<p>七状态模型<br />
+<img alt="alt text" src="../image-21.png" />  </p>
+<h1 id="22_2">2.2_2 进程调度的时机、切换与过程调度方式</h1>
+<ol>
+<li>时机</li>
+<li>什么时候需要进程调度？<ul>
+<li>主动放弃（进程正常终止、运行过程中发生异常而终止、进程主动请求阻塞）</li>
+<li>被动放弃（分给进程的时间片用完、有更紧急的事需要处理、有更高优先级的进程进入就绪队列）</li>
+</ul>
+</li>
+<li>
+<p>什么时候不能进行进程调度？</p>
+<ul>
+<li>在处理中断的过程中</li>
+<li>在操作系统内核程序临界区中 (<strong>在普通程序临界区时可以进行调度</strong>)  <ul>
+<li>临界资源：一个时段段内各进程互斥地访问临界资源</li>
+<li>临界区：访问临界资源的那段代码</li>
+</ul>
+</li>
+<li>内核程序临界区会访问就绪队列，导致其上锁</li>
+<li>在原子操作过程中（原语）</li>
+</ul>
+</li>
+<li>
+<p>切换与过程</p>
+</li>
+<li>“狭义的调度”与“进程切换”的区别<ul>
+<li>狭义：选择一个进程</li>
+<li>广义：狭义+进程切换  </li>
+</ul>
+</li>
+<li>
+<p>进程切换的过程需要做什么？</p>
+<ul>
+<li>对原来运行进程各种数据的保存</li>
+<li>对新的进程各种数据的恢复</li>
+</ul>
+</li>
+<li>
+<p>方式  </p>
+<ul>
+<li>非剥夺调度方式（非抢占式）:只允许进程主动放弃处理机</li>
+<li>剥夺调度方式（抢占式）:进程被动放弃，可以优先处理紧急任务，适合分时操作系统、实时操作系统  </li>
+</ul>
+</li>
+</ol>
+<p><img alt="alt text" src="../image-23.png" />  </p>
+<h1 id="22_3">2.2_3调度程序与闲逛进程</h1>
+<ul>
+<li>就绪态 ——》运行态，运行态 ——》就绪态 , 由调度程序引起  </li>
+</ul>
+<p><img alt="alt text" src="../image-24.png" />  </p>
+<ul>
+<li>
+<p>调度程序决定：  </p>
+<ul>
+<li>让谁运行 —— 调度算法  </li>
+<li>运行多长时间 —— 时间片大小  </li>
+</ul>
+</li>
+<li>
+<p>闲逛进程（idle）：没有其他就绪进程时，运行闲逛进程。  </p>
+</li>
+<li>
+<p>闲逛进程特性：</p>
+<ul>
+<li>优先级最低</li>
+<li>可以是0地址指令</li>
+<li>能耗低</li>
+</ul>
+</li>
+</ul>
+<h1 id="22_4">2.2_4 调度算法的评价指标</h1>
+<ol>
+<li>
+<p>CPU利用率<br />
+CPU利用率 = CPU忙碌的时间 / 总时间  </p>
+</li>
+<li>
+<p>系统吞吐量<br />
+系统吞吐量 = 总共完成了多少道作业 / 总共画了多少时间  </p>
+</li>
+<li>
+<p>周转时间</p>
+<ul>
+<li>周转时间（提交作业到完成作业花费的时间）</li>
+<li>平均周转时间（各作业周转时间之和/作业数）</li>
+<li>带权周转时间（作业周转时间/作业实际运行的时间）</li>
+<li>平均带权周转时间（各作业带权周转时间/作业数）  </li>
+</ul>
+</li>
+<li>
+<p>等待时间<br />
+进程或作业等待处理机状态时间的和  </p>
+<ul>
+<li>进程：等待被服务的时间之和</li>
+<li>作业：建立后的等待时间+作业在外存后备队列中等待的时间</li>
+</ul>
+</li>
+<li>
+<p>响应时间<br />
+从用户提交请求到首次产生响应所用的时间  </p>
+</li>
+</ol>
+<h1 id="22_5-fcfssjfhrrn">2.2_5 FCFS、SJF、HRRN调度算法</h1>
+<h4 id="fcfs">先来先服务（FCFS）</h4>
+<p>先到达先进行服务<br />
+作业-后备队列；进程-就绪队列<br />
+非抢占式<br />
+公平、算法简单<br />
+对长作业有利、对短作业不利、不会饥饿  </p>
+<h4 id="sjfshortest-job-first">短作业优先（SJF，shortest job first）</h4>
+<p>最短（服务时间最短）的作业优先得到服务，时间相同，先到达的先被服务<br />
+    - 非抢占式（SJF）：选最短需要时间的作业先进入运行态<br />
+    - 抢占式（SRTN）：有新作业进入就绪队列或有作业完成了，就绪队列中的最小需要时间的作业 <br />
+在所有进程都几乎同时到达时，采用SJF调度算法的平均等待时间、平均周转时间最少 <br />
+若无所有进程都几乎同时到达时的前提时，抢占式的短作业/进程的平均等待时间、平均周转时间最少 <br />
+优点：“最短的”平均等待时间，平均周转时间<br />
+缺点：对短作业有利，对长作业不利，可能产生饥饿现象  </p>
+<h4 id="hrrn">高响应比优先（HRRN）</h4>
+<p>要综合考虑作业/进程的等待时间和要求服务的时间<br />
+在每次调度时先计算各个作业/进程的响应比，选择响应比最高的作业/进程为其服务<br />
+响应比 =（等待时间+要求服务时间） / 要求服务时间<br />
+非抢占式<br />
+进程主动放弃CPU时，需要该算法选取就绪队列的作业<br />
+优点：<br />
+    FCFS优点<br />
+    SJF优点<br />
+    不会饥饿  </p>
+<h1 id="22_6">2.2_6 时间片轮转、优先级调度、多级反馈队列（适合交互式系统）</h1>
+<h4 id="rr">时间片轮转算法（RR）</h4>
+<p>算法思想：公平轮流地位各个进程服务，让每个进程在一定时间间隔内都可以得到响应<br />
+算法规则：按照各进程到达就绪队列的顺序，轮流让各个进程执行一个时间片（如100ms）。若进程未在一个时间片内执行完，则剥夺处理机，将进程重新放到就绪队列对位重新排队。<br />
+只能用于进程调度  </p>
+<p>抢占式，通过时钟中断实现<br />
+时间片太大会导致回退至FCFS且响应时间过大，时间片太小会导致系统开销过大且不考虑优先级。  </p>
+<p>优点：响应快，适用于分时操作系统 <br />
+缺点：由于高频率的进程切换，因此有一定的开销；不区分任务的紧急程度<br />
+不会饥饿  </p>
+<h4 id="_2">优先级调度算法</h4>
+<p>算法思想：根据任务的紧急程度来决定处理顺序<br />
+算法规则：每个进程/作业有各自的优先级，调度时选择优先级最高的作业/进程  </p>
+<p>适用：作业/进程/IO<br />
+抢占式（主动放弃+就绪队列改变）/ 不可抢占均有（只主动放弃）<br />
+静态优先级：优先级不变<br />
+动态优先级：优先级可变  </p>
+<p>通常，系统进程优先级高于用户进程，前台进程优先级高于后台进程，操作系统更偏好I/O进程（I/O繁忙型进程，对应的是计算型进程）<br />
+可以从追求公平、提升资源利用率等角度考虑改变优先级<br />
+可能会饥饿  </p>
+<h4 id="_3">多级反馈队列调度算法</h4>
+<p>算法思想：对其它算法调度的这种权衡<br />
+算法实现：设置多级就绪队列，各级队列优先级从高到低，时间片从小到大。新进程到达时先进入第一级队列，按照FCFS原则排队等待被分配时间片。 <br />
+若用完时间片进程还未结束，则进程进入下一级队列对位。如果此时已经在最下级的队列，则重新放回最下级队列末尾。<br />
+只有第K级队头的进程为空时，才会为K+1级对头的进程分配时间片，被抢占处理机的进程重新放回原队列队尾。  </p>
+<p>用于进程调度  </p>
+<p>优点：
+对各个进程相对公平（FCFS的优点）<br />
+每个新到达的进程都可以很快就得到响应（RR的优点）<br />
+短进程只用较少的时间就可以完成（SPF的优点）<br />
+不必实现估计进程的运行时间（避免用户作假）<br />
+可灵活地调整对各类进程的偏好程度，比如CPU密集型进程、IO密集型进程  </p>
+<p>默认抢占式<br />
+会饥饿  </p>
+<ol>
+<li>多级队列调度算法<br />
+系统中按进程类型设置多个队列，进程创建成功后插入某个队列，队列之间可采取固定优先级，或时间片划分。  </li>
+</ol>
+<p>各队列也可采用不同的调度策略，如：<br />
+    系统进程队列采用优先级调度<br />
+    交互式队列采用RR<br />
+    批处理队列采用FCFS  </p>
+<h1 id="23_1">2.3_1 进程同步、进程互斥</h1>
+<p>1、进程同步（进程具有异步性的特征，指个并发执行的进程以各自独立的、不可预知的速度向前推进）
+指为了完成某种任务而建立的两个或多个进程，这些进程因为需要在某些位置上协调他们的工作次序而产生的制约关系。进程间的直接制约关系就是源于它们之间的相互合作。
+2、进程互斥
+把一个时间段内只允许一个进程使用的资源称为临界资源。
+对临界资源的互斥访问，可以在逻辑上分为四个部分：
+do{
+  entry section;  //进入区  对访问的资源检查或进行上锁
+  critical section; //临界区(段) 访问临界资源的那部分代码
+  exit section;   //退出区  负责解锁
+  remainder section; //剩余区  其它处理
+} while(true)
+1、空闲让进。 空的可以直接进去
+2、忙则等待。 繁忙不能进去
+3、有限等待。 不能让进程等待无限长时间
+4、让权等待。 不能进去，不要堵着</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
